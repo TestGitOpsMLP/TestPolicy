@@ -1,0 +1,52 @@
+{
+  "Activate": [
+    {
+      "Domain": "github.com"
+    },
+    {
+      "Domain": "azure.com"
+    }
+  ],
+  "Version": "latest",
+  "RepositoryUrl": "https://github.com/TestGitOpsMLP/.github",
+  "FriendlyName": "SampleApp First Party",
+  "DeveloperAppId": "MyPolicyName",
+  "Description": "A very simple app to create acomment when we open or update an active pull request on both GitHub and ADO.",
+  "Outcomes": [
+    "Comment",
+    "Check",
+    "Issue",
+    "Email",
+    "ScheduleEvent",
+    "States",
+    "PullRequest"
+  ],
+  "Events": [
+    // github specific
+    "Pull_Request",
+    "Push",
+    "Installation",
+    "Installation_Repositories",
+    "Pull_Request_Review",
+    "Pull_Request_Review_Comment",
+    "Issue_Comment",
+    "Team",
+    "Repository",
+    "Issues",
+    "Workflow_Run",
+    "Check_Run",
+    "Branch_Protection_Rule",
+    "Code_Scanning_Alert",
+    "Dependabot_Alert",
+    "Secret_Scanning_Alert",
+    // ado specific
+    "Git_Pullrequest_Created",
+    "Git_Pullrequest_Updated",
+    "Ms_Vss_Code_Git_Pullrequest_Comment_Event",
+    "Git_Push",
+    "Git_Pullrequest_Merged"
+  ],
+  "Tier": {
+    "Layer": 3
+  }
+}
